@@ -1,10 +1,13 @@
 export default function GameEmbed() {
   return (
-    <div className="flex items-center justify-center w-full h-screen bg-zinc-900">
+    <div className="w-full h-screen">
       <iframe
         src="/PengunnersJS/index.html"
-        width="800"
-        height="600"
+        style={{
+          width: 'min(1200px, 95vw)',
+          height: 'min(600px, 47.5vw)',
+          border: 'none',
+        }}
         title="Love2D Game"
         allow="cross-origin-isolated"
         allowFullScreen
